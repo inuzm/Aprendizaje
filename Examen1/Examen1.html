@@ -93,47 +93,47 @@ img {
 </div>
 <div id="pregunta-12" class="section level2">
 <h2>Pregunta 12</h2>
-<p>Separando en muestra de entrenamiento y muestra de prueba, tenemos que la tasa base de error es 0.504. Se utiliza lasso con validación cruzada para escoger la <span class="math">\(\lambda\)</span>, cuyo valor es 0.01971 al usar la mayor <span class="math">\(\lambda\)</span> que está a una desviación estándar de la <span class="math">\(\lambda_{min}\)</span>, que más nos ayude para hacer la predicción. Evaluando el modelo que obtenemos tenemos la matriz de proporciones de confusión es:</p>
+<p>Separando en muestra de entrenamiento y muestra de prueba, tenemos que la tasa base de error es 0.504. Se utiliza lasso con validación cruzada para escoger la <span class="math">\(\lambda\)</span>, cuyo valor es 0.02114 al usar la mayor <span class="math">\(\lambda\)</span> que está a una desviación estándar de la <span class="math">\(\lambda_{min}\)</span>, que más nos ayude para hacer la predicción. Evaluando el modelo que obtenemos tenemos la matriz de proporciones de confusión es:</p>
 <pre><code>##    
 ##        0    1
-##   0 0.77 0.27
-##   1 0.23 0.73</code></pre>
-<p>De la tabla anterior tenemos que la sensibilidad es 0.77381 y la especificidad es 0.72581. Además podemos encontrar las quince palabras que indican con mayor fuerza que una reseña sea positiva y también para que sea negativa.</p>
+##   0 0.73 0.29
+##   1 0.27 0.71</code></pre>
+<p>De la tabla anterior tenemos que la sensibilidad es 0.73413 y la especificidad es 0.70565. Además podemos encontrar las quince palabras que indican con mayor fuerza que una reseña sea positiva y también para que sea negativa.</p>
 <p>Las palabras que indican con mayor fuerza que una reseña es positiva son:</p>
-<pre><code>##       [,1]           
-##  [1,] &quot;perfectly&quot;    
-##  [2,] &quot;caught&quot;       
-##  [3,] &quot;great&quot;        
-##  [4,] &quot;closet&quot;       
-##  [5,] &quot;deniro&quot;       
-##  [6,] &quot;trainspotting&quot;
-##  [7,] &quot;beautiful&quot;    
-##  [8,] &quot;against&quot;      
-##  [9,] &quot;source&quot;       
-## [10,] &quot;criminals&quot;    
-## [11,] &quot;comedies&quot;     
-## [12,] &quot;tunnel&quot;       
-## [13,] &quot;claims&quot;       
-## [14,] &quot;juliet&quot;       
-## [15,] &quot;hilarious&quot;</code></pre>
+<pre><code>##       [,1]       
+##  [1,] &quot;job&quot;      
+##  [2,] &quot;seen&quot;     
+##  [3,] &quot;great&quot;    
+##  [4,] &quot;life&quot;     
+##  [5,] &quot;making&quot;   
+##  [6,] &quot;person&quot;   
+##  [7,] &quot;political&quot;
+##  [8,] &quot;pulp&quot;     
+##  [9,] &quot;insurance&quot;
+## [10,] &quot;second&quot;   
+## [11,] &quot;quite&quot;    
+## [12,] &quot;very&quot;     
+## [13,] &quot;cameron&quot;  
+## [14,] &quot;most&quot;     
+## [15,] &quot;osment&quot;</code></pre>
 <p>Las palabras que indican con mayor fuerza que una reseña es negativa son:</p>
 <pre><code>##       palabras.negativas
 ##  [1,] &quot;bad&quot;             
-##  [2,] &quot;supposed&quot;        
-##  [3,] &quot;trash&quot;           
-##  [4,] &quot;focus&quot;           
-##  [5,] &quot;boring&quot;          
-##  [6,] &quot;villain&quot;         
-##  [7,] &quot;worst&quot;           
-##  [8,] &quot;goldblum&quot;        
-##  [9,] &quot;zeta-jones&quot;      
-## [10,] &quot;obvious&quot;         
-## [11,] &quot;unpleasant&quot;      
-## [12,] &quot;scheme&quot;          
-## [13,] &quot;mcgowan&quot;         
-## [14,] &quot;impression&quot;      
-## [15,] &quot;lame&quot;</code></pre>
-<p>Esto parece indicar que Trainspotting es una película que recibe muy buenas reseñas mientras que si Catherine Zeta-Jones actua en la película ésta recibirá malas reseñas.</p>
+##  [2,] &quot;try&quot;             
+##  [3,] &quot;villain&quot;         
+##  [4,] &quot;supposed&quot;        
+##  [5,] &quot;women&quot;           
+##  [6,] &quot;production&quot;      
+##  [7,] &quot;paris&quot;           
+##  [8,] &quot;any&quot;             
+##  [9,] &quot;minutes&quot;         
+## [10,] &quot;griffin&quot;         
+## [11,] &quot;vince&quot;           
+## [12,] &quot;team&quot;            
+## [13,] &quot;could&quot;           
+## [14,] &quot;there's&quot;         
+## [15,] &quot;eve&quot;</code></pre>
+<p>Al parecer las reseñas malas las escriben misóginos a los cuales no les gustan los villanos; lo cual es extraño porque si una película es violenta entonces parece que tendrá reseñas positivas, así como si es de política.</p>
 </div>
 <div id="pregunta-13" class="section level2">
 <h2>Pregunta 13</h2>
